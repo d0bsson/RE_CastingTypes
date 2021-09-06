@@ -15,6 +15,6 @@ struct Person {
 }
 
 struct Hobby {
-    let game: String
-    let experience: Int
+    let game = "Lineage 2"
+    let experience = 5
 }

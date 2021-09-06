@@ -53,8 +53,21 @@
                     <view key="view" contentMode="scaleToFill" id="DrB-I3-CB3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="np4-ML-MJB">
+                                <rect key="frame" x="51" y="103" width="312" height="35"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="r30-1f-nn0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="np4-ML-MJB" firstAttribute="centerX" secondItem="DrB-I3-CB3" secondAttribute="centerX" id="6mp-aY-4YR"/>
+                            <constraint firstItem="np4-ML-MJB" firstAttribute="top" secondItem="r30-1f-nn0" secondAttribute="top" constant="59" id="Uqk-A5-jsK"/>
+                            <constraint firstItem="np4-ML-MJB" firstAttribute="leading" secondItem="r30-1f-nn0" secondAttribute="leading" constant="51" id="mgH-Jh-dJA"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Some text" id="ddP-pQ-PJD">
                         <imageReference key="image" image="text.bubble" catalog="system" symbolScale="large"/>
@@ -62,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujF-33-Kc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="851"/>
+            <point key="canvasLocation" x="947.82608695652186" y="850.44642857142856"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="r5n-ot-HTK">
@@ -90,8 +103,21 @@
                     <view key="view" contentMode="scaleToFill" id="YLd-uA-bD8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBV-35-GbG">
+                                <rect key="frame" x="75" y="144" width="264" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Aqw-Ne-Pa1"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.3857355442" green="1" blue="0.5" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sBV-35-GbG" firstAttribute="top" secondItem="Aqw-Ne-Pa1" secondAttribute="top" constant="100" id="EFW-iW-AZU"/>
+                            <constraint firstItem="sBV-35-GbG" firstAttribute="centerX" secondItem="YLd-uA-bD8" secondAttribute="centerX" id="SmP-gc-r0Y"/>
+                            <constraint firstItem="sBV-35-GbG" firstAttribute="leading" secondItem="Aqw-Ne-Pa1" secondAttribute="leading" constant="75" id="oK7-pB-y9M"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hobby" id="W47-V3-0eE">
                         <imageReference key="image" image="gamecontroller" catalog="system" symbolScale="large"/>
@@ -133,13 +159,13 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PtV-QE-cfJ">
-                                <rect key="frame" x="151" y="426" width="112" height="44"/>
+                                <rect key="frame" x="112.5" y="426" width="189" height="44"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Click here">
+                                <state key="normal" title="My secret is here">
                                     <color key="titleColor" systemColor="systemBlueColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="eup-fk-9nS" kind="showDetail" id="dt5-0w-o3a"/>
+                                    <segue destination="eup-fk-9nS" kind="show" id="78G-Am-LkE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -185,6 +211,7 @@
                             <constraint firstItem="emB-FF-Mhc" firstAttribute="centerY" secondItem="VSI-m4-p1s" secondAttribute="centerY" id="gBb-Qu-lhV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="P4J-cs-qfM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uoc-zG-EXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -216,14 +243,14 @@
         <image name="gamecontroller" catalog="system" width="128" height="80"/>
         <image name="info" catalog="system" width="93" height="128"/>
         <image name="text.bubble" catalog="system" width="128" height="110"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
