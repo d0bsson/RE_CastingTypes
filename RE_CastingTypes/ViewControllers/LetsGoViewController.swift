@@ -7,9 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LetsGoViewController: UIViewController {
     
-    let person = Person()
+    private let person = Person()
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController else { return }
@@ -18,9 +18,11 @@ class ViewController: UIViewController {
         viewControllers.forEach {
             if let someTextVC = $0 as? SomeTextViewController {
                 someTextVC.someText = person.someText
+                
             } else if let hobbyVC = $0 as? HobbyViewController {
                 hobbyVC.hobby = person.hobby
                 hobbyVC.experience = person.experience
+                
             } else if let navigationVC = $0 as? UINavigationController {
                 if let infoVC = navigationVC.topViewController as? InfoViewController {
                     infoVC.name = person.name
