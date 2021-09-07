@@ -10,13 +10,13 @@ import UIKit
 class HobbyViewController: UIViewController {
 
     
+    @IBOutlet weak var hobbyLabel: UILabel!
     
+    var hobby: String!
+    var experience: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        hobbyLabel.text = "Play in \(hobby ?? "") for \(experience ?? 0) years"
     }
-    
-
 }

@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W41-7s-wUC">
-                                <rect key="frame" x="163.5" y="425.5" width="87" height="45"/>
+                                <rect key="frame" x="152" y="425.5" width="110" height="45"/>
                                 <color key="backgroundColor" red="0.50821109689999999" green="0.28560799320000002" blue="0.15377869899999999" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Поехали!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -38,7 +38,7 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="W41-7s-wUC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4u3-my-hjX"/>
-                            <constraint firstItem="W41-7s-wUC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e5l-od-uAK"/>
+                            <constraint firstItem="W41-7s-wUC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MsL-BI-pTN"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -72,6 +72,9 @@
                     <tabBarItem key="tabBarItem" title="Some text" id="ddP-pQ-PJD">
                         <imageReference key="image" image="text.bubble" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="someTextLabel" destination="np4-ML-MJB" id="nm3-Ld-u2O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ujF-33-Kc4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,7 +107,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hobby" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBV-35-GbG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hobby" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBV-35-GbG">
                                 <rect key="frame" x="75" y="144" width="264" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
@@ -115,13 +118,16 @@
                         <color key="backgroundColor" red="0.3857355442" green="1" blue="0.5" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="sBV-35-GbG" firstAttribute="top" secondItem="Aqw-Ne-Pa1" secondAttribute="top" constant="100" id="EFW-iW-AZU"/>
-                            <constraint firstItem="sBV-35-GbG" firstAttribute="centerX" secondItem="YLd-uA-bD8" secondAttribute="centerX" id="SmP-gc-r0Y"/>
+                            <constraint firstItem="Aqw-Ne-Pa1" firstAttribute="trailing" secondItem="sBV-35-GbG" secondAttribute="trailing" constant="75" id="cGe-cP-28k"/>
                             <constraint firstItem="sBV-35-GbG" firstAttribute="leading" secondItem="Aqw-Ne-Pa1" secondAttribute="leading" constant="75" id="oK7-pB-y9M"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hobby" id="W47-V3-0eE">
                         <imageReference key="image" image="gamecontroller" catalog="system" symbolScale="large"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="hobbyLabel" destination="sBV-35-GbG" id="QKy-be-Jvb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a01-NM-GAt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

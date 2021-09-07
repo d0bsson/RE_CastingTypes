@@ -17,7 +17,7 @@
 		D7F8270D26E696FA007232A8 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8270C26E696FA007232A8 /* InfoViewController.swift */; };
 		D7F8271026E69705007232A8 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8270F26E69705007232A8 /* HobbyViewController.swift */; };
 		D7F8271326E6970F007232A8 /* SomeTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8271226E6970F007232A8 /* SomeTextViewController.swift */; };
-		D7F8271626E69718007232A8 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8271526E69718007232A8 /* Model.swift */; };
+		D7F8271626E69718007232A8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F8271526E69718007232A8 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		D7F8270C26E696FA007232A8 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		D7F8270F26E69705007232A8 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
 		D7F8271226E6970F007232A8 /* SomeTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeTextViewController.swift; sourceTree = "<group>"; };
-		D7F8271526E69718007232A8 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D7F8271526E69718007232A8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 		D7F8270426E692C3007232A8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D7F8271526E69718007232A8 /* Model.swift */,
+				D7F8271526E69718007232A8 /* Person.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 				D7F8271326E6970F007232A8 /* SomeTextViewController.swift in Sources */,
 				D7F826F126E692A6007232A8 /* SceneDelegate.swift in Sources */,
 				D7F8270D26E696FA007232A8 /* InfoViewController.swift in Sources */,
-				D7F8271626E69718007232A8 /* Model.swift in Sources */,
+				D7F8271626E69718007232A8 /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
