@@ -10,7 +10,7 @@ struct Person {
     let name = "David"
     let secondName = "Berdnikov"
     let age = 18
-    let someText = "Some text is beutiful"
+    let someText = "Здесь я передаю данные на первый экран"
     let hobby = "Lineage 2"
     let experience = 5
 }
